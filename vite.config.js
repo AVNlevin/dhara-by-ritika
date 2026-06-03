@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
+// Trigger deployment with updated Pages settings
+
 export default defineConfig({
   base: './',
   server: {
