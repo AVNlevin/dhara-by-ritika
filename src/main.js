@@ -57,11 +57,19 @@ function initHeaderScroll() {
   if (!header) return;
 
   let isScrolled = false;
+  let ticking = false;
+
   window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY > 50;
-    if (scrolled !== isScrolled) {
-      isScrolled = scrolled;
-      header.classList.toggle('header-scrolled', isScrolled);
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const scrolled = window.scrollY > 50;
+        if (scrolled !== isScrolled) {
+          isScrolled = scrolled;
+          header.classList.toggle('header-scrolled', isScrolled);
+        }
+        ticking = false;
+      });
+      ticking = true;
     }
   }, { passive: true });
 }
