@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Dashboard | Dhara by Ritika</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="admin-body">
+
+    <!-- Passcode Gate Screen -->
+    <div class="admin-gate" id="admin-gate">
+      <div class="gate-card">
+        <h1 class="logo-text">DHARA BY RITIKA</h1>
+        <span class="gate-subtitle">Atelier Portal Secure Access</span>
+        <form id="gate-form">
+          <div class="form-group">
+            <label for="passcode">Enter Passcode</label>
+            <input type="password" id="passcode" placeholder="••••••••" required autofocus>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Verify Access</button>
+          <div class="gate-status" id="gate-status"></div>
+        </form>
+        <a href="/index.html" class="back-link">← Return to Website</a>
+      </div>
+    </div>
+
+    <!-- Admin Dashboard (Hidden by default) -->
+    <div class="admin-dashboard hidden" id="admin-dashboard">
+      <header class="admin-header">
+        <div class="admin-header-container">
+          <div class="admin-logo">
+            <h1 class="logo-text">DHARA BY RITIKA</h1>
+            <span class="admin-tagline">Management Dashboard</span>
+          </div>
+          <div class="admin-actions">
+            <a href="/index.html" class="btn btn-secondary">View Website</a>
+            <button class="btn btn-primary" id="btn-logout">Lock Panel</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="admin-main container">
+        <div class="admin-grid">
+          <!-- Form Section -->
+          <section class="admin-panel upload-panel">
+            <h2 class="panel-title">Upload New Design</h2>
+            <form id="upload-form">
+              <!-- Drag & Drop Zone -->
+              <div class="form-group">
+                <label>Design Image *</label>
+                <div class="drag-drop-zone" id="drag-drop-zone">
+                  <input type="file" id="image-input" accept="image/*" class="file-input" required>
+                  <div class="drag-drop-content" id="drag-drop-content">
+                    <span class="upload-icon">📸</span>
+                    <p>Drag & drop image here or <strong>browse files</strong></p>
+                    <span class="file-size-limit">Recommended: JPEG/PNG under 1MB</span>
+                  </div>
+                  <img src="" alt="Preview" class="upload-preview hidden" id="upload-preview">
+                </div>
+              </div>
+
+              <!-- Title -->
+              <div class="form-group">
+                <label for="design-title">Design Title *</label>
+                <input type="text" id="design-title" placeholder="E.g., The Ivory Anarkali" required>
+              </div>
+
+              <!-- Category -->
+              <div class="form-group">
+                <label for="design-category">Category *</label>
+                <select id="design-category" required>
+                  <option value="" disabled selected>Select category...</option>
+                  <option value="bridal">Bridal Couture</option>
+                  <option value="evening">Evening Wear</option>
+                </select>
+              </div>
+
+              <!-- Description -->
+              <div class="form-group">
+                <label for="design-desc">Description *</label>
+                <textarea id="design-desc" rows="4" placeholder="Describe the materials, handcrafting details, etc..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btn-add-design">Publish Design</button>
+              <div class="upload-status" id="upload-status"></div>
+            </form>
+          </section>
+
+          <!-- List Section -->
+          <section class="admin-panel list-panel">
+            <h2 class="panel-title">Current Portfolio Items</h2>
+            <p class="panel-subtitle">Here are the custom designs currently uploaded to your live site.</p>
+            
+            <div class="design-list" id="design-list">
+              <!-- Dynamically populated list of uploaded designs -->
+            </div>
+          </section>
+        </div>
+
+        <!-- Inquiries Section -->
+        <section class="admin-panel inquiries-panel" style="margin-top: 3rem;">
+          <h2 class="panel-title">Client Inquiries</h2>
+          <p class="panel-subtitle">Here are the private consultation requests sent by clients through your website.</p>
+          <div class="inquiry-list" id="inquiry-list">
+            <!-- Dynamically populated client inquiries -->
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/admin.js"></script>
+  </body>
+</html>

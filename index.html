@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhara by Ritika | Luxury Bridal & Custom Fashion Designer</title>
+    <meta name="description" content="Exquisite handcrafted luxury bridal wear, custom evening gowns, and bespoke couture designs. Book a private consultation at Dhara by Ritika atelier." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header" id="site-header">
+      <div class="header-container">
+        <a href="#hero" class="brand-logo" id="brand-logo">
+          <span class="logo-text">DHARA BY RITIKA</span>
+        </a>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#collections" class="nav-link">Collections</a></li>
+            <li><a href="#designer" class="nav-link">Designer</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg">
+        <video autoplay muted playsinline class="hero-video">
+          <source src="/images/hero-video.mp4" type="video/mp4">
+          <img src="/images/hero.png" alt="Luxury Bridal Gown background" class="hero-img">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Fashion, Tailored to Perfection</h1>
+        <p class="hero-subtitle">Handcrafted luxury bridal wear and custom designer gowns tailored to your unique story.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="hero-cta-primary">Contact Us</a>
+          <a href="#collections" class="btn btn-secondary" id="hero-cta-secondary">Explore Collections</a>
+        </div>
+        <div class="hero-instagram">
+          <a href="https://instagram.com/dhara_by_ritika" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            @dhara_by_ritika
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections-section reveal-section" id="collections">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Collections</span>
+          <h2 class="section-title">Portfolios</h2>
+          <p class="section-subtitle">Browse through our bespoke couture and design works. Every piece is customizable.</p>
+        </div>
+
+        <div class="filter-controls" id="filter-controls">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Pieces</button>
+          <button class="filter-btn" data-filter="bridal" id="filter-bridal">Bridal Couture</button>
+          <button class="filter-btn" data-filter="evening" id="filter-evening">Evening Wear</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Item 1: Bridal Ivory Anarkali -->
+          <div class="portfolio-item show" data-category="bridal" id="item-bridal-1">
+            <div class="portfolio-image-wrapper">
+              <img src="/images/portfolio1.jpeg" alt="Ivory Anarkali with gold embroidery" class="portfolio-img" loading="lazy">
+              <div class="portfolio-hover">
+                <div class="hover-content">
+                  <h3>The Ivory Anarkali</h3>
+                  <span class="item-tag">Bridal Couture</span>
+                  <p>Timeless white georgette Anarkali with intricate hand-embroidered gold accents and layered flare.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Bridal Seraphina Lehenga -->
+          <div class="portfolio-item show" data-category="bridal" id="item-bridal-2">
+            <div class="portfolio-image-wrapper">
+              <img src="/images/portfolio2.jpeg" alt="Off-white tiered lehenga saree" class="portfolio-img" loading="lazy">
+              <div class="portfolio-hover">
+                <div class="hover-content">
+                  <h3>The Seraphina Lehenga</h3>
+                  <span class="item-tag">Bridal Couture</span>
+                  <p>Minimalist off-white tiered lehenga skirt paired with a clean sweetheart neck blouse and matching organza dupatta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Evening Coral Horizon Gown -->
+          <div class="portfolio-item show" data-category="evening" id="item-evening-1">
+            <div class="portfolio-image-wrapper">
+              <img src="/images/portfolio3.jpeg" alt="Coral flowing gown with train" class="portfolio-img" loading="lazy">
+              <div class="portfolio-hover">
+                <div class="hover-content">
+                  <h3>The Coral Horizon Gown</h3>
+                  <span class="item-tag">Evening Wear</span>
+                  <p>Ethereal peach satin gown with an open back, trailing chiffon train, and matching fitted gloves.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Bridal Cornflower Blue Lehenga -->
+          <div class="portfolio-item show" data-category="bridal" id="item-bridal-3">
+            <div class="portfolio-image-wrapper">
+              <img src="/images/portfolio4.jpeg" alt="Cornflower blue embroidered lehenga" class="portfolio-img" loading="lazy">
+              <div class="portfolio-hover">
+                <div class="hover-content">
+                  <h3>The Cornflower Blue Lehenga</h3>
+                  <span class="item-tag">Bridal Couture</span>
+                  <p>Cornflower blue raw silk lehenga with a full-sleeve blouse featuring hand-embroidered ivory floral details.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Evening Midnight Onyx Anarkali -->
+          <div class="portfolio-item show" data-category="evening" id="item-evening-2">
+            <div class="portfolio-image-wrapper">
+              <img src="/images/portfolio5.jpeg" alt="Black silk flared Anarkali" class="portfolio-img" loading="lazy">
+              <div class="portfolio-hover">
+                <div class="hover-content">
+                  <h3>The Midnight Onyx Anarkali</h3>
+                  <span class="item-tag">Evening Wear</span>
+                  <p>Rich black flared silk Anarkali suit highlighted with a classic gold border and matching lightweight dupatta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Designer Section -->
+    <section class="atelier-section reveal-section" id="designer">
+      <div class="container">
+        <div class="grid grid-2">
+          <div class="atelier-image-container">
+            <img src="/images/atelier.jpg" alt="Dhara by Ritika Model Gown" class="atelier-img" loading="lazy">
+            <div class="border-accent"></div>
+          </div>
+          <div class="atelier-text-container">
+            <span class="section-tag">The Designer</span>
+            <h2 class="section-title">The Art of Handcrafted Luxury</h2>
+            <p class="atelier-description">
+              At Dhara by Ritika, we believe a gown is more than just clothing; it is a canvas of emotions, dreams, and meticulous artistry. Founded on the principles of traditional haute couture, our atelier designs pieces that embody grace, elegance, and distinct personal styles.
+            </p>
+            <p class="atelier-description">
+              Every drape of silk, touch of lace, and hand-sewn crystal is curated to celebrate the individual. From sketch to final fitting, we pour hours of specialized craftsmanship into designing bridal couture and luxury evening garments that fit perfectly and feel transcendent.
+            </p>
+            <div class="atelier-signature">
+              <span class="designer-name">Ritika</span>
+              <span class="designer-title">Founder & Chief Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="booking-section reveal-section" id="contact">
+      <div class="container">
+        <div class="booking-wrapper grid grid-2 align-center">
+          <div class="booking-info">
+            <span class="section-tag">Contact Us</span>
+            <p>Ready to start creating your dream gown or have an inquiry? Get in touch with our atelier to schedule a private consultation. In this session, we will discuss your vision, sketch custom designs, and view fabric selections.</p>
+            <ul class="booking-perks">
+              <li>✨ <strong>Private Atelier Access:</strong> Exclusive 1-on-1 session with designer Ritika.</li>
+              <li>📐 <strong>Personalized Sketching:</strong> Hand-sketched silhouettes tailored to you.</li>
+              <li>🎨 <strong>Fabric Curation:</strong> Browse hundreds of premium silks, laces, and hand-beaded details.</li>
+            </ul>
+
+            <!-- Creative Instagram Callout -->
+            <div class="instagram-callout">
+              <span class="insta-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </span>
+              <div class="insta-text">
+                <span class="insta-label">Follow our creations</span>
+                <a href="https://instagram.com/dhara_by_ritika" target="_blank" rel="noopener noreferrer" class="insta-handle">@dhara_by_ritika</a>
+              </div>
+            </div>
+          </div>
+          <div class="booking-card-form">
+            <form id="consultation-form">
+              <div class="form-row grid grid-2">
+                <div class="form-group">
+                  <label for="client-name">Your Name *</label>
+                  <input type="text" id="client-name" name="name" placeholder="E.g., Jessica Taylor" required>
+                </div>
+                <div class="form-group">
+                  <label for="client-email">Email Address *</label>
+                  <input type="email" id="client-email" name="email" placeholder="E.g., jessica@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="client-phone">Phone Number *</label>
+                <input type="tel" id="client-phone" name="phone" placeholder="E.g., +1 (555) 019-2834" required>
+              </div>
+
+              <div class="form-group">
+                <label for="client-message">Message *</label>
+                <textarea id="client-message" name="message" rows="4" placeholder="How can we help you? Share your ideas, silhouettes, or questions..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-booking-btn">Send Message</button>
+              <div class="form-status" id="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container text-center">
+        <div class="footer-about">
+          <h3>DHARA BY RITIKA</h3>
+          <div class="footer-divider"></div>
+          <p>Bespoke bridal and luxury evening wear crafted with timeless artistry and dedication to detail.</p>
+          <p class="footer-insta">
+            <a href="https://instagram.com/dhara_by_ritika" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              @dhara_by_ritika
+            </a>
+          </p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Dhara by Ritika. All Rights Reserved. Crafted with elegance. | <a href="/admin.html" class="footer-portal-link">Atelier Portal</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Image Preview">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close Preview">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+      <div class="lightbox-content">
+        <div class="lightbox-image-container">
+          <img src="" alt="" class="lightbox-img" id="lightbox-img">
+        </div>
+        <div class="lightbox-info">
+          <h3 id="lightbox-title"></h3>
+          <span class="item-tag" id="lightbox-tag"></span>
+          <p id="lightbox-desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
